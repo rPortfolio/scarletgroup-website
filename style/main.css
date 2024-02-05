@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
