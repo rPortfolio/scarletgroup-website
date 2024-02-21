@@ -14,10 +14,12 @@
         }
 
         /* Bottom left text */
-        .bottom-left {
+        .bottom {
         position: absolute;
         bottom: 8px;
-        left: 16px;
+        width: 20em;
+        left: 50%;
+        right: 50%;
         }
 
         /* Top left text */
@@ -79,6 +81,24 @@
         li a:hover {
         background-color: #000;
         }
+
+        .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: aliceblue;
+        color: black;
+        }
+
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+        padding: 2px 16px;
+        }
     </style>
 </head>
 <body class="light">
@@ -91,25 +111,27 @@
           </ul> 
     </nav>
     <div class="container" style="background-image: url('img/handshake.jpg'); width: 100%; height: 70vmin; background-size: cover; background-attachment: fixed;">
-        <!-- <img src="img/handshake.jpg" alt="Snow" style="width: 100%; height: 40vmin; opacity: 0.5;"> -->
-        <div class="centered">
-            <ul style="background: none; display: flex;">
-                <li class="red-bg rounded"><a>Listings</a></li>
-                <li class="red-bg rounded"><a>Listings</a></li>
-            </ul>
+        <div class="centered" style="display: flex; flex-direction: column;">
             <h1 style="text-shadow: 4px 4px black;"><em>The Scarlet Group</em></h1>
+            <div class="fake-button" style="float: center;"><h2>Apply Now</h2></div>
         </div>
     </div>
-    <div class="red-bg" style="padding-right: 24em; padding-left: 24em; padding-bottom: 1em;">
+    <div class="red-bg" style="padding-right: 24em; padding-left: 24em; padding-bottom: 1em; margin-top: 4px; width: auto;">
         <h2 style="text-align: center;">The Best in New Jersey</h2>
         <p>With over 20 years of experience, The Scarlet Group specializes in matching business professionals to business needs. Our purpose is to make sure everyone succeeds in their goals, one career at a time. As a certified Minority Business Enterprise (MBE), The Scarlet Group is looking to help NJ/NY corporations and small businesses fill their demand for IT professionals and Project Managers.
         </p>
     </div>
 
-    <!-- <div class="red-bg" style="width: 50%; right: 0px; position: absolute;">
-        <img src="img/handshake.jpg" />
-    </div> -->
-    
+    <div>
+        <div class="card">
+            <img src="img_avatar.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>John Doe</b></h4>
+              <p>Architect & Engineer</p>
+            </div>
+          </div> 
+    </div>
+
     <p>We hire.</p>
     <ul>
         <li><a href="index.html">Home</a></li>
