@@ -1,13 +1,11 @@
 body {
     background-color: black;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
 }
 
 h1 {
     font-size: 7em;
     text-align: center;
+    text-shadow: 4px 4px black;
 }
 
 h2 {
@@ -16,158 +14,46 @@ h2 {
 }
 
 p {
-    /* font-size: 2em; */
     font-size: 20px;
 }
 
-div {
-    margin: 0;
+div.title-container {
+    background-image: url('../img/handshake.jpg'); 
+    width: 100%; 
+    height: 70vmin; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    margin-right: 0; 
+    padding: 0;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
-.light {
-    color: #f2f2f2;
-}
+div.centered-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
 
 .red-bg {
     background-color: #a43232;
     border-radius: 10px;
     border: solid black 1px;
-}
-
-.rounded {
-    border: 2px solid #a43232;
-    border-radius: 6px;
-    margin: 0.5em;
-}
-
-.light-red-bg {
-    background-color: #bf6f6f;
-}
-
-.fake-button {
-    background-color: orange;
-    border-radius: 100000px;
-    border: solid black 2px;
-    color: black;
-    padding: 0.1em 1em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container {
-    position: relative;
-    text-align: center;
     color: white;
-    }
-
-/* Bottom left text */
-.bottom {
-position: absolute;
-bottom: 8px;
-width: 20em;
-left: 50%;
-right: 50%;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
-/* Top left text */
-.top-left {
-position: absolute;
-top: 8px;
-left: 16px;
+div.left-half {
+    width: 50%;
+    float: left;
+    display: inline;
 }
 
-/* Top right text */
-.top-right {
-position: absolute;
-top: 8px;
-right: 16px;
-}
-
-/* Bottom right text */
-.bottom-right {
-position: absolute;
-bottom: 8px;
-right: 16px;
-}
-
-/* Centered text */
-.centered {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-} 
-
-ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #252525;
-position: fixed;
-top: 0;
-width: 100%;
-display: flex;
-justify-content: center;
-}
-
-
-li {
-float: left;
-}
-
-li a {
-display: block;
-color: white;
-text-align: center;
-padding: 20px 40px;
-text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-background-color: #000;
-}
-
-.card {
-/* Add shadows to create the "card" effect */
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-transition: 0.3s;
-background-color: aliceblue;
-color: black;
-width: 15em;
-}
-
-h4 {
-    color: black;
-}
-
-a {
-    color: white;
-    text-underline-offset: 1000px;
-}
-
-.card p {
-    color: black;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-/* Add some padding inside the card container */
-.container {
-padding: 2px 16px;
+div.right-half {
+    display: inline-block;
+    width: 50%;
+    float: right;
 }
