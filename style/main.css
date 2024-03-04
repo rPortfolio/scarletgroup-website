@@ -1,10 +1,59 @@
 body {
     background-color: black;
-    color: white;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 7em;
     text-align: center;
+    text-shadow: 4px 4px black;
+}
+
+h2 {
+    font-size: 4em;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+div.title-container {
+    background-image: url('../img/handshake.jpg'); 
+    width: 100%; 
+    height: 70vmin; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    margin-right: 0; 
+    padding: 0;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+div.centered-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.red-bg {
+    background-color: #a43232;
+    border-radius: 10px;
+    border: solid black 1px;
+    color: white;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+div.left-half {
+    width: 50%;
+    float: left;
+    display: inline;
+}
+
+div.right-half {
+    display: inline-block;
+    width: 50%;
+    float: right;
 }
