@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Scarlet Group</title>
     <link href="style/main.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> -->
 </head>
-<body style="display: flex; justify-content: center;">
+<body>
     <nav id="navbar">
         <ul>
             <li><a href="default.asp">Home</a></li>
@@ -15,59 +16,77 @@
             <li><a href="about.asp">About</a></li>
           </ul> 
     </nav>
-    <div class="title-container">
-        <div class="centered-title">
-            <h1><em>The Scarlet Group</em></h1>
-            <a href="listings.html"><div class="big-link" style="float: center;"><h2>Apply Now</h2></div></a>
+
+    <main>
+        <div class="title-container">
+            <div class="centered-title">
+                <h1><em>The Scarlet Group</em></h1>
+                <a href="listings.html"><div class="big-link" style="float: center;"><h2>Apply Now</h2></div></a>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="red-bg column">
-            <h2>The Best in New Jersey</h2>
-            <p>
-                With over 20 years of experience, 
-                The Scarlet Group specializes in 
-                matching business professionals to 
-                business needs. Our purpose is to 
-                make sure everyone succeeds in their 
-                goals, one career at a time. As a 
-                certified Minority Business Enterprise 
-                (MBE), The Scarlet Group is looking to 
-                help NJ/NY corporations and small 
-                businesses fill their demand for IT 
-                professionals and Project Managers.
-            </p>
+
+        <div class="red-bg" style="display: flex; justify-content: center;">
+            <div style="width: 50em;">
+                <h2 style="text-align: center;">The Best in New Jersey</h2>
+                <p>
+                    With over 20 years of experience, 
+                    The Scarlet Group specializes in 
+                    matching business professionals to 
+                    business needs. Our purpose is to 
+                    make sure everyone succeeds in their 
+                    goals, one career at a time. As a 
+                    certified Minority Business Enterprise 
+                    (MBE), The Scarlet Group is looking to 
+                    help NJ/NY corporations and small 
+                    businesses fill their demand for IT 
+                    professionals and Project Managers.
+                </p>
+            </div>
         </div>
-        <div class="column" style="display: flex; justify-content: center;">
-            <img src="img/mbe.png" style="height: 10em; width: 10em; margin-left: 5em;" />
+
+        <div class="row">
+            <div class="column" style="width: 70%; height: 40em;">
+                <img src="img/companies/bms.jpg" style="" />
+            </div>
+            <div class="column" style="width: 30%;">
+                <p>
+                    The Scarlet Group provides opportunies that will jumpstart your career 
+                    and allow you to work at the job that suits you. 
+                    We work with popular firms like Brysol Myer Squibb, MERC, ADP, and more. 
+                    Are you ready to join us?
+                </p>
+            </div>
         </div>
-    </div>
-    <div style="display: flex; justify-content: center; margin-top: 3em; gap: 1em;">
-        <div class="card container">
-            <img src="img/icons/computer.svg" style="filter: invert(100%); height: 5em; width: 5em; float: center; display: block;" />
-            <h3>IT</h3>
-            <p>Work in computer and technology support.</p>
+
+        <h2 style="text-align: center;">Choose your career.</h2>
+
+        <div style="display: flex; justify-content: center; margin-top: 3em; gap: 1em;">
+            <div class="card container">
+                <img src="img/icons/computer.svg" style="filter: invert(100%); height: 5em; width: 5em; float: center; display: block;" />
+                <h3>IT</h3>
+                <p>Work in computer and technology support.</p>
+            </div>
+            <div class="card container">
+                <img src="img/icons/computer.svg" style="filter: invert(100%); height: 5em; width: 5em; float: center; display: block;" />
+                <h3>Programming</h3>
+                <p>Develop software at major firms.</p>
+            </div>
         </div>
-        <div class="card container">
-            <img src="img/icons/computer.svg" style="filter: invert(100%); height: 5em; width: 5em; float: center; display: block;" />
-            <h3>Programming</h3>
-            <p>Develop software at major firms.</p>
-        </div>
-    </div>
+
+    </main>
 </body>
 
 <script>
-    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-    } else {
-        document.getElementById("navbar").style.top = "-50px";
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
     }
-    prevScrollpos = currentScrollPos;
-    } 
 </script>
 
 </html>
