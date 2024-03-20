@@ -10,31 +10,37 @@
   </head>
 
   <body style="background-color: black;">
+    <nav id="navbar">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.asp">News</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul> 
+    </nav>
     <h1 style="color: white;">Contact Us</h1>
 
-    <div class="row"> 
-      <div style="background-color: antiquewhite; width: 50em; font-size: larger;" class="column"> 
+    <div style="display: flex; justify-content: center;"> 
+      <div style="color: black; background-color: antiquewhite; width: 50em; font-size: larger;" class="column"> 
         <p>We're always interested with connecting clients with the businesses that will best meet their needs. </p>
         <p><b>Connect with us via any of these options and we will respond as soon as possible.</b></p>
       </div>
 
       <div style="background-color: maroon;" class="column">
-        <p style="font-size: x-large; color: white;">Email: </p>
-  
-        <input type="text" value="thescarletgroup@outlook.com" id="myInput">
-  
+        <p style="font-size: x-large; color: white; display: inline;">Email: </p>
+        <a href="mailto:thescarletgroup@outlook.com" style="display: inline;">
+          <p>thescarletgroup@outlook.com"</p>
+        </a>
         <div class="tooltip">
           <button onclick="myFunction()" onmouseout="outFunc()">
             <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
              Copy text
           </button>
         </div>
-              
         <p style="color:white; font-size: x-large;">Connect with us on <a href="https://www.linkedin.com/company/the-scarlet-group/">LinkedIn!</a></p>
-  
       </div>
     </div>
-    
+    <script src="scripts/navbar.js"></script>
   </body>
 
     <style>
@@ -78,19 +84,19 @@
     </style>
 
     <script>
-        function myFunction() {
-            var copyText = document.getElementById("myInput");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            navigator.clipboard.writeText(copyText.value);
+        function copyEmail() {
+            // var copyText = document.getElementById("myInput");
+            // copyText.select();
+            // copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText("thescarletgroup@outlook.com");
       
             var tooltip = document.getElementById("myTooltip");
-            tooltip.innerHTML = "Copied: " + copyText.value;
+            tooltip.innerHTML = "Copied!";
         }
     
         function outFunc() {
             var tooltip = document.getElementById("myTooltip");
-         tooltip.innerHTML = "Copy to clipboard";
+          tooltip.innerHTML = "Copy to Clipboard";
         }
     </script>
 </html>
