@@ -1,3 +1,7 @@
+:root {
+  --main-red: #a43232;
+}
+
 body {
     background-color: black;
     color: #fffbeb;
@@ -108,7 +112,7 @@ div.centered-title {
 } 
 
 .red-bg {
-    background-color: #a43232;
+    background-color: var(--main-red);
     border-radius: 10px;
     border: solid black 1px;
     color: white;
@@ -191,6 +195,7 @@ a:active {
 @keyframes grow {
   from {
     background-color: black;
+    transform: scale(1);
   }
   to {
     background-image: #252525;

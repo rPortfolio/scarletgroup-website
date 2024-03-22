@@ -1,0 +1,12 @@
+{
+    "Programmer" : {
+        "description" : "Make applications."
+    },
+    "Web Developers" : {
+        "description" : "Make applications."
+    },
+    "Hirer" : {
+        "description" : "Hire potential employees."
+    }
+    
+}

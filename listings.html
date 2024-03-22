@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style/main.css" rel="stylesheet" />
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Listings</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
           </ul> 
     </nav>
 
-    
+    <div id="innerdiv" class="red-bg" style="margin-top: 4em;">
+        <h1>Listings</h1>
+    </div>
+
+    <script>
+        test();
+        async function test() {
+            let promise = await fetch('jobs.json');
+            let json = await promise.json();
+            let d = await document.getElementById("innerdiv");
+            for (let i in json) {
+                console.log(i);
+                d.innerHTML += "<div style='width: 80%; margin: auto;' class='card'><h2>" + i + "</h2>" + "<p>"+ json[i]["description"] + "</p></div>";
+            }
+        }
+    </script>
 </body>
 </html>
