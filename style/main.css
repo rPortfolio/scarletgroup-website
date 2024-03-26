@@ -1,13 +1,13 @@
 :root {
     --bg-red: #a43232;
-    --bg-gray: #0c0a09;
+    --bg-gray: #252525;
     --text-color: #fef2f2;
 }
 
 body {
     color: var(--text-color);
     font: 'Times New Roman';
-    background-color: black;
+    background-color: var(--bg-gray);
 }
 
 p {
