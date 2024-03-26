@@ -1,0 +1,22 @@
+div.title-box {
+    height: 500px; 
+    background-position: center; 
+    background-image: url('../img/handshake.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 10vw;
+    text-align: center;
+    text-shadow: 4px 4px black;
+}
+
+h2 {
+    font-size: 4em;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2em;
+}

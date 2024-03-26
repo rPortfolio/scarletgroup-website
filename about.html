@@ -1,44 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css" />
-    <title>About</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style/home.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+    <title>The Scarlet Group</title>
+  </head>
+  <body data-bs-theme="dark" style="font-family: 'Times New Roman'">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+      <img src="img/logo.png" style="width: 2em; height: 2em;" class="m-2" />
 
-<style> 
-body {
-    background-color: rgb(107, 32, 32);
-}
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listings.html">Listings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
+    <h1>About</h1>
 
-</style>
-
-</head>
-<body>
-    <h1 style="color: white;">About</h1>
-    <div style="background-color: rgba(255, 255, 255, 0.925);">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contacts.html">Contact Us</a></li>
-    </ul>
-
-    <div class="row">
-        <div class="red-bg column">
-            <h2>We Are Here For You!</h2>
-            <p>
-                The Scarlet Group specializes in 
-                matching business professionals to 
-                business needs. Our purpose is to 
-                make sure everyone succeeds in their 
-                goals, one career at a time. As a 
-                certified Minority Business Enterprise 
-                (MBE), The Scarlet Group is looking to 
-                help NJ/NY corporations and small 
-                businesses fill their demand for IT 
-                professionals and Project Managers.
-            </p>
-        </div>
-</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
